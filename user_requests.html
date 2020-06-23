@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Cайт подачи заявок на участие в IT конференциях">
+
+        <title>Cайт подачи заявок на участие в IT конференциях</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="/assets/mdb/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+<style>
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+</style>
+
+        <!-- Custom styles for this template -->
+        <link href="/css/carousel.css" rel="stylesheet">
+        <link href="/css/style2.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">IT конференция</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Главная</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/apply.html">Подать заявку</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/successful.html">Заявка успешно подана</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin.html">Вход администратора</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user_requests.html">Поданные заявки</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Введите запрос" aria-label="Search">
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">Поиск</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="backg">
+                        <div class="image" style="background-image: url(/images/backgs/1.jpg)"></div>
+                    </div>
+                
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>Конференция по мобильной разработке</h1>
+                            <p>22-25 июня 2020</p>
+                            <p><a class="btn btn-lg btn-primary" href="/apply.html" role="button">Подать заявку</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="backg">
+                        <div class="image" style="background-image: url(/images/backgs/2.jpg)"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>О конференции</h1>
+                            <p>IT конференциях — это техническая конференция для команд мобильной разработки, в которой регулярно участвуют более 600 человек.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Узнать больше</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="backg">
+                        <div class="image" style="background-image: url(/images/backgs/3.jpg)"></div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>В программе никакого маркетинга, менеджмента и пересказов документации, только технологии и только из первых рук</h1>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Организаторы</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+        <div class="container marketing pb-5">
+            <h2 class="text-center pb-5">Поданные заявки от пользователей</h2>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Фамилия</th>
+                            <th>Имя</th>
+                            <th>Отчество</th>
+                            <th>Email</th>
+                            <th>Контактный номер</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Иванов</td>
+                            <td>Иван</td>
+                            <td>Иванович</td>
+                            <td>ivan@example.com</td>
+                            <td>+10001110011</td>
+                        </tr>
+
+                        <tr>
+                            <td>Борисов</td>
+                            <td>Борис</td>
+                            <td>Борисович</td>
+                            <td>boris@example.com</td>
+                            <td>+10001110011</td>
+                        </tr>
+
+                        <tr>
+                            <td>Алексеев</td>
+                            <td>Алексей</td>
+                            <td>Алексеевич</td>
+                            <td>boris@example.com</td>
+                            <td>+10001110011</td>
+                        </tr>
+
+                        <tr>
+                            <td>Иванов</td>
+                            <td>Иван</td>
+                            <td>Иванович</td>
+                            <td>ivan@example.com</td>
+                            <td>+10001110011</td>
+                        </tr>
+
+                        <tr>
+                            <td>Борисов</td>
+                            <td>Борис</td>
+                            <td>Борисович</td>
+                            <td>boris@example.com</td>
+                            <td>+10001110011</td>
+                        </tr>
+
+                        <tr>
+                            <td>Алексеев</td>
+                            <td>Алексей</td>
+                            <td>Алексеевич</td>
+                            <td>boris@example.com</td>
+                            <td>+10001110011</td>
+                        </tr>
+
+                        <tr>
+                            <td>Иванов</td>
+                            <td>Иван</td>
+                            <td>Иванович</td>
+                            <td>ivan@example.com</td>
+                            <td>+10001110011</td>
+                        </tr>
+
+                        <tr>
+                            <td>Борисов</td>
+                            <td>Борис</td>
+                            <td>Борисович</td>
+                            <td>boris@example.com</td>
+                            <td>+10001110011</td>
+                        </tr>
+
+                        <tr>
+                            <td>Алексеев</td>
+                            <td>Алексей</td>
+                            <td>Алексеевич</td>
+                            <td>boris@example.com</td>
+                            <td>+10001110011</td>
+                        </tr>
+                    </tbody>
+                </table>  
+
+        </div><!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-right"><a href="#">Поднятся вверх</a></p>
+            <p>&copy; 2020 IT конференция</p>
+        </footer>
+    </main>
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.slim.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+</html>
